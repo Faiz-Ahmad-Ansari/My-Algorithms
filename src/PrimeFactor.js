@@ -20,7 +20,7 @@ class PrimeFactor extends React.Component{
         if (this.state.searchFactor >= 1) {
 
             while (this.state.searchFactor % 2 === 0) {
-                primeFactor.push(2);
+                primeFactor.push(2 + ',');
                 this.state.searchFactor = this.state.searchFactor/2;
             }
             
@@ -28,7 +28,7 @@ class PrimeFactor extends React.Component{
                 console.log(sqrtNum);
             for (let i = 3; i <= sqrtNum; i++) {
                 while (this.state.searchFactor % i === 0) {
-                    primeFactor.push(i);
+                    primeFactor.push(i + ',');
                     this.state.searchFactor = this.state.searchFactor / i;
                 }
             }
@@ -42,7 +42,6 @@ class PrimeFactor extends React.Component{
                 <h1>This is Prime Factor</h1>
                 <input type='number' onChange={this.inputHandler}/>
                 <div>{primeFactor}</div>
-                <div>{this.state.searchFactor}</div>
             </div>
              )
         
