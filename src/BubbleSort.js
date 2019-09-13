@@ -38,9 +38,7 @@ class BubbleSort extends React.Component{
             <div>
                 <h1>This is Sort Array Algorithm</h1>
                 <input type='text' onChange={this.inputHandler}/>
-                <div>{this.state.SortInput}</div>
-                <div>[{x + ','}]</div>   
-              
+                <div>[{x + ','}]</div>                 
             </div>
         )
     }
