@@ -13,8 +13,8 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <Switch>
         <Menu />
+      <Switch>
         <Route path= '/PrimeNumber' component= {PrimeNum} />
         <Route path= '/PrimeFactors' component= {PrimeFactor} />
         <Route path= '/BubbleSort' component= {BubbleSort} />
