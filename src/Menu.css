@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .myNav{   
     width: 100%;
     background-color: lightgreen;
@@ -24,4 +25,46 @@ li {
 .myNav ul li a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+
+    .myNav{   
+        width: 100%;
+        background-color: lightgreen;
+        color: white;
+    }
+
+    ul{
+        height: 400px;;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    li:hover{
+        background-color: grey;
+    }
+
+    .myNav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .MenuHead{
+        font-size: 20px;
+        width: 100%;
+        margin: 0px;
+        background-color: cornflowerblue;
+
+    }
+
 }

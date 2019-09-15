@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <switch>
+      <Switch>
         <Menu />
         <Route path= '/PrimeNumber' component= {PrimeNum} />
         <Route path= '/PrimeFactors' component= {PrimeFactor} />
@@ -21,7 +21,7 @@ function App() {
         <Route path= '/FizzBuzz' component= {FizzBuzz} />
         <Route path= '/Fibonacci' component= {Fibonacci} />
         <Route path= '/ReverseString' component= {ReverseString} />
-      </switch>
+      </Switch>
       </BrowserRouter>
       
     </div>
