@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.myNav{   
+    width: 100%;
+    background-color: lightgreen;
+    color: white;
+}
+
+ul{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+.myNav ul li a {
+    color: white;
+    text-decoration: none;
+}

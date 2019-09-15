@@ -34,11 +34,12 @@ class BubbleSort extends React.Component{
                 // n--;
             } while (swapp);
             console.log(x);
+    
         return(
             <div>
                 <h1>This is Sort Array Algorithm</h1>
-                <input type='text' onChange={this.inputHandler}/>
-                <div>[{x + ','}]</div>                 
+                <input type='text' placeholder='Type Text or Number Here..' onChange={this.inputHandler}/>
+                <div className='output'>[{x + ','}]</div>                 
             </div>
         )
     }

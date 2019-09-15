@@ -39,9 +39,9 @@ class PrimeFactor extends React.Component{
         }    
         return(
             <div>
-                <h1>This is Prime Factor</h1>
-                <input type='number' onChange={this.inputHandler}/>
-                <div>{primeFactor}</div>
+                <h1>Find Prime Factors of Number Algoritm</h1>
+                <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
+                <div className='output'>{primeFactor}</div>
             </div>
              )
         

@@ -16,12 +16,12 @@ class FizzBuzz extends React.Component{
         let text = "";
         let i ;
         for (i = 1;i <= this.state.FizzInput ; i++){
-            if (((i % 3)==0) && ((i % 5)==0)){
+            if (((i % 3) === 0) && ((i % 5) === 0)){
                 text += "fizzbuzz, ";
                 }
-            else if ((i % 3)==0){
+            else if ((i % 3) === 0){
                 text += "fizz, ";
-            }else if ((i % 5)==0){
+            }else if ((i % 5) === 0){
                 text += "buzz, ";
             }else {
                 text += i + " " ;
@@ -30,9 +30,9 @@ class FizzBuzz extends React.Component{
         return(
             <div>
                 <h1>This is FizzBuzz Algorithm</h1>
-                <input type='number' onChange={this.inputHandler}/>
+                <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
                 <div>{this.state.FizzInput}</div>
-                <div>{text}</div>                 
+                <div className='output'>{text}</div>                 
             </div>
         )
     }
