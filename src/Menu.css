@@ -64,6 +64,9 @@ li {
         width: 100%;
         margin: 0px;
         background-color: cornflowerblue;
+    }
 
+    .mobileMenu{
+        float: right;
     }
 }

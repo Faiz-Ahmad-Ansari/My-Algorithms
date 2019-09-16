@@ -5,7 +5,10 @@ import {Link} from 'react-router-dom';
 const Menu = ()=> {
     return(
         <div>
-            <h1 className='MenuHead'>My Algorithms</h1>
+            <div>
+                <h1 className='MenuHead'>My Algorithms</h1>
+                <div className='mobileMenu'>Menu</div> 
+            </div>
             <div className='myNav'>
                 <ul>
                     <li><Link to ='PrimeNumber'>Prime Number</Link></li>
