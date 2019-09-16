@@ -7,25 +7,48 @@ import FizzBuzz from './FizzBuzz';
 import Fibonacci from './Fibonacci';
 import ReverseString from './ReverseString';
 import Menu from './Menu';
+import Drawer from './Drawer';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <Menu />
-      <Switch>
-        <Route path= '/PrimeNumber' component= {PrimeNum} />
-        <Route path= '/PrimeFactors' component= {PrimeFactor} />
-        <Route path= '/BubbleSort' component= {BubbleSort} />
-        <Route path= '/FizzBuzz' component= {FizzBuzz} />
-        <Route path= '/Fibonacci' component= {Fibonacci} />
-        <Route path= '/ReverseString' component= {ReverseString} />
-      </Switch>
-      </BrowserRouter>
-      
-    </div>
-  );
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      DrawerOpen: false
+    }
+  }
+
+  drawerToggleClickHandler = () =>{
+    this.setState((prevState)=>{
+      return{DrawerOpen: !prevState.DrawerOpen};
+    } )
+  }
+
+  render(){
+    let Draawer;
+    if (this.state.DrawerOpen) {
+      Draawer = <Drawer drawerItemClickHandler={this.drawerToggleClickHandler} />
+    }
+
+    return (
+      <div>
+        <BrowserRouter>
+            <Menu drawerClickHandler={this.drawerToggleClickHandler} />
+            {Draawer}
+            
+        <Switch>
+            <Route path= '/PrimeNumber' component= {PrimeNum} />
+            <Route path= '/PrimeFactors' component= {PrimeFactor} />
+            <Route path= '/BubbleSort' component= {BubbleSort} />
+            <Route path= '/FizzBuzz' component= {FizzBuzz} />
+            <Route path= '/Fibonacci' component= {Fibonacci} />
+            <Route path= '/ReverseString' component= {ReverseString} />
+        </Switch>
+        </BrowserRouter>
+        
+      </div>
+    );
+  }
 }
 
 export default App;
