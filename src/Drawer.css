@@ -1,11 +1,16 @@
 .DrawerNav{   
     width: 100%;
-    background-color: lightsalmon;
-    color: white;
+    color: black;
+    background-color: skyblue;
+    animation: slideMe 2s ease;
+}
+@keyframes slideMe{
+    from{transform:translateX(-500px);}
+    to{transform: translateX(0px);}
 }
 
 .DrawerNav ul{
-    height: 400px;;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -16,17 +21,26 @@
     list-style-type: none;
     display: inline-block;
     padding: 10px;
-    width: 100%;
+    width: 90%;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+    
 }
 
 .DrawerNav li:hover{
-    background-color: grey;
+    background-color: orange
 }
 
 .DrawerNav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
+.DrawerNav ul li a:hover{
+    color: white;
+    font-weight: bold;
+}
+
 
 @media only screen and (min-width: 600px){
     .DrawerNav{
