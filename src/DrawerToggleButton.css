@@ -1,6 +1,16 @@
 .toggleButton{
-    height: 30px;
-    width: 100%
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    background-image:linear-gradient(to right,pink,white,pink);
+    cursor: pointer;
+    transition-duration: 0.7s;
+    border: 2px solid black;
+    box-shadow: 3px 3px 4px black;
+}
+
+.toggleButton:hover{
+    background-image:linear-gradient(to right,lightgreen,white,lightgreen);
 }
 
 @media only screen and (min-width: 600px){

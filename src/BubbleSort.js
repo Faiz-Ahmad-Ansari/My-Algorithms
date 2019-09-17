@@ -1,5 +1,5 @@
 import React from 'react';
-import './BubbleSort';
+import './BubbleSort.css';
 
 class BubbleSort extends React.Component{
 

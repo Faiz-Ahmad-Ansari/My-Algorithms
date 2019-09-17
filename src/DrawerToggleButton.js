@@ -6,7 +6,7 @@ const DrawerToggleButton = (props) => {
     return(
         <div>
             <button className='toggleButton' onClick={props.click}>
-                <div>Menu</div>
+                <div>Click to here get the Algorithm List</div>
             </button>
         </div>
     )
