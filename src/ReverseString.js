@@ -1,4 +1,5 @@
 import React from 'react';
+import './ReverseString.css';
 
 class ReverseString extends React.Component{
     constructor(props){
@@ -22,7 +23,7 @@ class ReverseString extends React.Component{
         console.log(reverse);
         
         return(
-            <div>
+            <div className='ReverseString'>
                 <h1>This is Reverse String Algorithm</h1>
                 <input type='text' placeholder='Type Text or Number Here..' onChange={this.inputHandler}/>
                 <div className='output'>{reverse}</div>

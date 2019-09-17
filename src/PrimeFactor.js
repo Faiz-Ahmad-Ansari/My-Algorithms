@@ -1,4 +1,5 @@
 import React from 'react';
+import './PrimeFactor.css';
 
 class PrimeFactor extends React.Component{
 
@@ -38,7 +39,7 @@ class PrimeFactor extends React.Component{
             }
         }    
         return(
-            <div>
+            <div className='PrimeFactor'>
                 <h1>Find Prime Factors of Number Algoritm</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
                 <div className='output'>{primeFactor}</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './FizzBuzz.css';
 
 class FizzBuzz extends React.Component{
     constructor(props){
@@ -28,7 +29,7 @@ class FizzBuzz extends React.Component{
             }
         }
         return(
-            <div>
+            <div className='FizzBuzz'>
                 <h1>This is FizzBuzz Algorithm</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
                 <div>{this.state.FizzInput}</div>

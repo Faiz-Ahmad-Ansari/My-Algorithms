@@ -1,4 +1,5 @@
 import React from 'react';
+import './BubbleSort';
 
 class BubbleSort extends React.Component{
 
@@ -36,7 +37,7 @@ class BubbleSort extends React.Component{
             console.log(x);
     
         return(
-            <div>
+            <div className='BubbleSort'>
                 <h1>This is Sort Array Algorithm</h1>
                 <input type='text' placeholder='Type Text or Number Here..' onChange={this.inputHandler}/>
                 <div className='output'>[{x + ','}]</div>                 

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Fibonacci.css';
 
 class Fibonacci extends React.Component{
     constructor(props){
@@ -20,7 +21,7 @@ class Fibonacci extends React.Component{
                 }
         const fibArrayString = fibArray.toString();
         return(
-            <div>
+            <div className='Fibonacci'>
                 <h1>This is Fibonacci Algorithm</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
                 <div className='output'>{fibArrayString}</div>                 

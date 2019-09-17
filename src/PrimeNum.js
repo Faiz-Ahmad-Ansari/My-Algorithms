@@ -1,5 +1,5 @@
 import React from 'react';
-import './Common.css';
+import './PrimeNum.css';
 
 class PrimeNum extends React.Component{
     constructor(props){
@@ -29,7 +29,7 @@ class PrimeNum extends React.Component{
             }
 
         return(
-            <div>
+            <div className='PrimeNum'>
                 <h1>Verify Prime Number Algorithm</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
                 <div className='output'>{test}</div>

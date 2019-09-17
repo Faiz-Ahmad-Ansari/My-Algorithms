@@ -24,3 +24,11 @@ input{
     font-size: 25px;
     font-weight: bold;
 }
+
+.PrimeNum{   
+    animation: slidePrimeNum 2s ease;
+}
+@keyframes slidePrimeNum{
+    from{transform:translateX(500px);}
+    to{transform: translateX(0px);}
+}
