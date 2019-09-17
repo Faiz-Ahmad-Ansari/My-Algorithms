@@ -10,7 +10,7 @@
 }
 
 .DrawerNav ul{
-    height: 100vh;
+    height: 83vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
