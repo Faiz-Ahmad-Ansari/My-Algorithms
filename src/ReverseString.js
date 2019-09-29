@@ -43,7 +43,7 @@ class ReverseString extends React.Component{
             <div className='ReverseString'>
                 <h1>This is Reverse String Algorithm</h1>
                 <input type='text' placeholder='Type Text or Number Here..' onChange={this.inputHandler}/>
-                <hr/><div className='output'>{reverse}</div><hr/>
+                <br/><br/><hr/><div className='output'>{reverse}</div><hr/>
 
                 <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Reverse String ?</button>
                 {Define}

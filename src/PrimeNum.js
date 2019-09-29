@@ -61,7 +61,7 @@ class PrimeNum extends React.Component{
             <div className='PrimeNum'>
                 <h1>Verify Prime Number</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
-                <hr/><div className='output'>{test}</div><hr/>
+                <br/><br/><hr/><div className='output'>{test}</div><hr/>
 
                 <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Prime Number ?</button>
                 {Define}

@@ -52,7 +52,7 @@ class FizzBuzz extends React.Component{
                 <h1>This is FizzBuzz Algorithm</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
                 <div>{this.state.FizzInput}</div>
-                <hr/><div className='output'>{text}</div><hr/>
+                <br/><br/><hr/><div className='output'>{text}</div><hr/>
 
                 <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Fizz Buzz ?</button>
                 {Define}                 
