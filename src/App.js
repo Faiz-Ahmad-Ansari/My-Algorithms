@@ -8,20 +8,23 @@ import Fibonacci from './Fibonacci';
 import ReverseString from './ReverseString';
 import Menu from './Menu';
 import Drawer from './Drawer';
+import FrontPage from './FrontPage';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      DrawerOpen: false
+      DrawerOpen: false,
+      FrontPage: true
     }
   }
 
   drawerToggleClickHandler = () =>{
     this.setState((prevState)=>{
       return{DrawerOpen: !prevState.DrawerOpen};
-    } )
+    })
+    this.setState({FrontPage:false})
   }
 
   render(){
@@ -30,8 +33,13 @@ class App extends React.Component{
       Draawer = <Drawer drawerItemClickHandler={this.drawerToggleClickHandler} />
     }
 
+    let frontPg;
+    if(this.state.FrontPage){
+      frontPg = <FrontPage/>
+    }
+
     return (
-      <div>
+      <div className='App'>
         <BrowserRouter>
             <Menu drawerClickHandler={this.drawerToggleClickHandler} />
             {Draawer}
@@ -45,7 +53,7 @@ class App extends React.Component{
             <Route path= '/PrimeFactors' component= {PrimeFactor} />
         </Switch>
         </BrowserRouter>
-        
+        {frontPg}
       </div>
     );
   }

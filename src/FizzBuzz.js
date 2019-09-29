@@ -51,8 +51,7 @@ class FizzBuzz extends React.Component{
             <div className='FizzBuzz'>
                 <h1>FizzBuzz</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
-                <div>{this.state.FizzInput}</div>
-                <br/><br/><hr/><div className='output'>{text}</div><hr/>
+                <br/><br/><br/><hr/><div className='output'>{text}</div><hr/>
 
                 <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Fizz Buzz ?</button>
                 {Define}                 

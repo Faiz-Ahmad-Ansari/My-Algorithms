@@ -1,0 +1,17 @@
+.FrontPage{
+    margin: 10px;
+    margin-top: 30px;
+}
+#header{
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+}
+#header div{
+    padding: 10px;
+}
+#sign{
+    padding: 10px;
+    font-style: italic;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+}

@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom';
 
 const Menu = (props)=> {
     return(
-        <div>
-            <div><h1 className='MenuHead'>My Algorithms</h1></div>
+        <div className='menu'>
+            <div><h1 className='MenuHead'>Algorithms App</h1></div>
             <div>
                 <DrawerToggleButton click={props.drawerClickHandler}  />
             </div> 
