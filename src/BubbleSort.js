@@ -56,9 +56,9 @@ class BubbleSort extends React.Component{
 
         return(
             <div className='BubbleSort'>
-                <h1>This is Sort Array Algorithm</h1>
+                <h1>Bubble Sort</h1>
                 <input type='text' placeholder='Type Text or Number Here..' onChange={this.inputHandler}/>
-                <hr/><div className='output'>[{x + ','}]</div><hr/>
+                <br/><br/><br/><hr/><div className='output'>[{x + ','}]</div><hr/>
 
                 <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Bubble Sort ?</button>
                 {Define}                 

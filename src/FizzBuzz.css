@@ -11,11 +11,12 @@ h1{
     padding: 10px;
 }
 
-input{
-    width: 99%; 
-    margin: 10px;
-    padding: 20px;
+.FizzBuzz input{
+    width: 95%; 
+    padding: 15px;
     font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
 }
 
 .output{

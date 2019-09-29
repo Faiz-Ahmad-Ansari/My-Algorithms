@@ -40,9 +40,9 @@ class Fibonacci extends React.Component{
         }
         return(
             <div className='Fibonacci'>
-                <h1>This is Fibonacci Algorithm</h1>
+                <h1>Fibonacci Series</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
-                <br/><br/><hr/><div className='output'>{fibArrayString}</div><hr/>
+                <br/><br/><br/><hr/><div className='output'>{fibArrayString}</div><hr/>
 
                 <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Fibonacci Number Series ?</button>
                 {Define}                 

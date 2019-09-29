@@ -1,6 +1,6 @@
 .toggleButton{
     height: 50px;
-    width: 100%;
+    width: 98%;
     font-size: 20px;
     background-image:linear-gradient(to right,pink,white,pink);
     cursor: pointer;

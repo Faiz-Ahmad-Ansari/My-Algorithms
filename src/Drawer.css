@@ -2,6 +2,7 @@
     width: 100%;
     color: black;
     background-color: skyblue;
+    margin-top: 5px;
     animation: slideMe 2s ease;
 }
 @keyframes slideMe{

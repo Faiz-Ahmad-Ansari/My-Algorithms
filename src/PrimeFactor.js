@@ -60,9 +60,9 @@ class PrimeFactor extends React.Component{
 
         return(
             <div className='PrimeFactor'>
-                <h1>Find Prime Factors of Number Algoritm</h1>
+                <h1>Find Prime Factors of Number</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
-                <br/><br/><hr/><div className='output'>{primeFactor}</div><hr/>
+                <br/><br/><br/><hr/><div className='output'>{primeFactor}</div><hr/>
 
                 <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Prime Factors ?</button>
                 {Define}

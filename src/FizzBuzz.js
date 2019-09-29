@@ -49,7 +49,7 @@ class FizzBuzz extends React.Component{
 
         return(
             <div className='FizzBuzz'>
-                <h1>This is FizzBuzz Algorithm</h1>
+                <h1>FizzBuzz</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
                 <div>{this.state.FizzInput}</div>
                 <br/><br/><hr/><div className='output'>{text}</div><hr/>

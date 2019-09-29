@@ -6,7 +6,7 @@
     animation-duration: 2s;
 }
 .defineButton{
-  width: 100%;
+  width: 99%;
   padding: 5px;
   margin-top: 30px;
   background-image:linear-gradient(to right,grey,white,grey);
