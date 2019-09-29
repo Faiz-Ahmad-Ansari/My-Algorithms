@@ -1,0 +1,25 @@
+.definition {
+    padding: 10px;
+    color:black;
+    font-style: italic;
+    animation-name: define;
+    animation-duration: 2s;
+}
+.defineButton{
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  background-image:linear-gradient(to right,grey,white,grey);
+  color: black;
+  border: 1px solid black;
+}
+.defineButton:hover{
+  font-weight: bold;
+}
+
+@keyframes define {
+  0%   {opacity:0;}
+  25%  {opacity:0.5;}
+  50%  {opacity:0.75;}
+  100% {opacity:1;}
+}

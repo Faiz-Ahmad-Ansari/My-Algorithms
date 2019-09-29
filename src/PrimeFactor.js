@@ -1,18 +1,31 @@
 import React from 'react';
 import './PrimeFactor.css';
+import './definition.css';
+
 
 class PrimeFactor extends React.Component{
 
     constructor(props){
         super(props);
         this.state = {
-            searchFactor : 1
+            searchFactor : 1,
+            definition : '',
+            definitionToggle: false
         }
     }
 
     inputHandler = (event)  => {
         this.setState({searchFactor: event.target.value})
     }
+
+    componentDidMount() {
+        setTimeout(() => {
+          this.setState({definition: "'Prime Factorization' is finding which prime numbers multiply together to make the original number."})
+        }, 1000)
+      }
+
+    Hover = () => {this.setState({definitionToggle: true})}
+    hoverLeave = () => {this.setState({definitionToggle: false})}
 
     render(){
 
@@ -38,11 +51,21 @@ class PrimeFactor extends React.Component{
                 primeFactor.push(this.state.searchFactor);
             }
         }    
+
+        //Definition
+        let Define;
+        if(this.state.definitionToggle){
+            Define = <div className='definition'>{this.state.definition}</div>
+        }
+
         return(
             <div className='PrimeFactor'>
                 <h1>Find Prime Factors of Number Algoritm</h1>
                 <input type='number' placeholder='Type Number Here..' onChange={this.inputHandler}/>
-                <div className='output'>{primeFactor}</div>
+                <hr/><div className='output'>{primeFactor}</div><hr/>
+
+                <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Prime Factors ?</button>
+                {Define}
             </div>
              )
         

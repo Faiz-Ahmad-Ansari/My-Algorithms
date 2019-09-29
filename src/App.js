@@ -38,11 +38,11 @@ class App extends React.Component{
             
         <Switch>
             <Route path= '/PrimeNumber' component= {PrimeNum} />
-            <Route path= '/PrimeFactors' component= {PrimeFactor} />
+            <Route path= '/ReverseString' component= {ReverseString} />
             <Route path= '/BubbleSort' component= {BubbleSort} />
             <Route path= '/FizzBuzz' component= {FizzBuzz} />
             <Route path= '/Fibonacci' component= {Fibonacci} />
-            <Route path= '/ReverseString' component= {ReverseString} />
+            <Route path= '/PrimeFactors' component= {PrimeFactor} />
         </Switch>
         </BrowserRouter>
         
