@@ -36,7 +36,9 @@ class App extends React.Component{
     let frontPg;
     if(this.state.FrontPage){
       frontPg = <FrontPage/>
-    }
+    } 
+
+    let Menuu = <Menu drawerClickHandler={this.drawerToggleClickHandler} />
 
     return (
       <div className='App'>

@@ -14,7 +14,7 @@ class BubbleSort extends React.Component{
     }
 
     inputHandler = (event)  => {
-        this.setState({SortInput: event.target.value.split("")})
+        this.setState({SortInput: event.target.value.split(",")})
     }
 
     componentDidMount() {
@@ -28,26 +28,19 @@ class BubbleSort extends React.Component{
 
 
     render(){
-            let swapp;
-            let Array = this.state.SortInput;
-            let n = Array.length-1;
-            let x = Array;
-        do {
-            swapp = false;
-            for (let i=0; i < n; i++)
-                    {
-                    if (x[i] > x[i+1])
-                        {
-                        var temp = x[i];
-                        x[i] = x[i+1];
-                        x[i+1] = temp;
-                        swapp = true;
-                        }
+        let inputArr = this.state.SortInput;
+        let len = inputArr.length;
+            for (let i = 0; i < len; i++) {
+                for (let j = 0; j < len; j++) {
+                    if (inputArr[j] > inputArr[j + 1]) {
+                        let tmp = inputArr[j];
+                        inputArr[j] = inputArr[j + 1];
+                        inputArr[j + 1] = tmp;
                     }
-                // n--;
-            } while (swapp);
-            console.log(x);
-    
+                }
+            }
+            console.log(inputArr);
+                
             //Definition
             let Define;
             if(this.state.definitionToggle){
@@ -58,7 +51,7 @@ class BubbleSort extends React.Component{
             <div className='BubbleSort'>
                 <h1>Bubble Sort</h1>
                 <input type='text' placeholder='Type Text or Number Here..' onChange={this.inputHandler}/>
-                <br/><br/><br/><hr/><div className='output'>[{x + ','}]</div><hr/>
+                <br/><br/><br/><hr/><div className='output'>[{inputArr + ','}]</div><hr/>
 
                 <button className='defineButton' onMouseOver={this.Hover} onMouseLeave={this.hoverLeave}>What is Bubble Sort ?</button>
                 {Define}                 

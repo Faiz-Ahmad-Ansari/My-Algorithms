@@ -16,7 +16,7 @@ const FrontPage = ()=> {
                 <div>Contact - 7775995030/7977211076</div>
                 <div>Email - ansarifaiz32@gmail.com</div>
             </footer>
-            
+                       
         </div>
     )
 }
